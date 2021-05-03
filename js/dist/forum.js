@@ -569,10 +569,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.initializers.add('justoverclock/flarum-ext-toastme', function () {
-  var Toastyfy = toastify_js__WEBPACK_IMPORTED_MODULE_0___default()({
+  toastify_js__WEBPACK_IMPORTED_MODULE_0___default()({
     text: "This is a toast",
     duration: -1,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "https://flarum.it",
     newWindow: true,
     close: true,
     gravity: "top",

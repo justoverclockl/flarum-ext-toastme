@@ -6,10 +6,10 @@ import IndexPage from 'flarum/components/IndexPage';
 
 app.initializers.add('justoverclock/flarum-ext-toastme', () => {
 
-  const Toastyfy = Toastify({
+  Toastify({
     text: "This is a toast",
     duration: -1,
-    destination: "https://github.com/apvarun/toastify-js",
+    destination: "https://flarum.it",
     newWindow: true,
     close: true,
     gravity: "top", // `top` or `bottom`
