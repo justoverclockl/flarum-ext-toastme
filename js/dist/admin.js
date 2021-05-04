@@ -118,8 +118,8 @@ __webpack_require__.r(__webpack_exports__);
 
 flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.extensionData["for"]('justoverclock-toastme').registerSetting({
   setting: 'justoverclock-toastme.enable.toast',
-  label: 'Enable Toast',
-  help: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('flarum-ext-toastme.admin.enabletoast'),
+  label: 'Enable/Disable Toast',
+  help: 'Use this setting to enable or disable the toast alert',
   type: 'boolean'
 });
 

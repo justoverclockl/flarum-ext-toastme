@@ -12,6 +12,8 @@
 namespace Justoverclock\ToastMe;
 
 use Flarum\Extend;
+use Flarum\Api\Event\Serializing;
+
 
 return [
     (new Extend\Frontend('forum'))

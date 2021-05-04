@@ -1,6 +1,7 @@
 flarum-ext-toastme:
-  forum:
-    message1: Hello! You seem to be interested in this forum, but you haven't registered an account yet.
   admin:
-    enabletoast: Display an alert box After X post
+    enabletoast: Display abla blabablablabt
     helpenable: Example text
+  forum:
+    message1: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+
