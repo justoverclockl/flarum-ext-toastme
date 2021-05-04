@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^11.2.12",
+    "flarum": "^0.1.0-beta.16",
     "flarum-webpack-config": "^0.1.0-beta.10",
     "ngx-toastr": "^13.2.1",
     "toaster-js": "^2.2.3",

@@ -21,5 +21,5 @@ return [
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/resources/less/admin.less'),
     new Extend\Locales(__DIR__.'/resources/locale'),
-    (new Extend\Settings())->serializeToForum('EnableToastify', 'justoverclock-guestengagement.enable.toast', 'boolval', true),
+    (new Extend\Settings())->serializeToForum('EnableToastify', 'justoverclock-toastme.enable.toast', 'boolval', true),
 ];

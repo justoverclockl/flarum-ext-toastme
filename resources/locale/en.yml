@@ -1,3 +1,6 @@
 flarum-ext-toastme:
-   forum:
-     message1: AS If you want to use custom classes on the toast for customizing (like info or warning for example), you can do that as follows
+  forum:
+    message1: Hello! You seem to be interested in this forum, but you haven't registered an account yet.
+  admin:
+    enabletoast: Display an alert box After X post
+    helpenable: Example text

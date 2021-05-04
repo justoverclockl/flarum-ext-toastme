@@ -117,8 +117,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.extensionData["for"]('justoverclock-toastme').registerSetting({
-  setting: 'justoverclock-guestengagement.enable.toast',
-  label: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('flarum-ext-toastme.admin.enabletoast'),
+  setting: 'justoverclock-toastme.enable.toast',
+  label: 'Enable Toast',
+  help: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('flarum-ext-toastme.admin.enabletoast'),
   type: 'boolean'
 });
 
