@@ -3,11 +3,12 @@ import { extend } from 'flarum/common/extend';
 import app from 'flarum/app';
 import IndexPage from 'flarum/components/IndexPage';
 
+
+
 app.initializers.add('justoverclock/flarum-ext-toastme', () => {
-  extend(IndexPage.prototype, 'view', function (vdom) {
+  extend(IndexPage.prototype, 'oncreate', function ()  {
     if (app.forum.attribute('EnableToastify') === true)
-      if (vdom.children && vdom.children.splice) {
-        const insert = Toastify({
+         Toastify({
           text: app.translator.trans('flarum-ext-toastme.forum.message1'),
           duration: -1,
           offset: {
@@ -22,11 +23,6 @@ app.initializers.add('justoverclock/flarum-ext-toastme', () => {
           backgroundColor: "#e39709",
           stopOnFocus: true, // Prevents dismissing of toast on hover
         }).showToast();
-        if(insert) return;
-        vdom.children.splice(1, 0, insert);
-
-      }
+return (IndexPage);
   })
 })
-
-

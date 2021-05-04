@@ -569,31 +569,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.initializers.add('justoverclock/flarum-ext-toastme', function () {
-  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'view', function (vdom) {
-    if (flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.forum.attribute('EnableToastify') === true) if (vdom.children && vdom.children.splice) {
-      var insert = toastify_js__WEBPACK_IMPORTED_MODULE_0___default()({
-        text: flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.translator.trans('flarum-ext-toastme.forum.message1'),
-        duration: -1,
-        offset: {
-          x: 50,
-          // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-          y: 400 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'oncreate', function () {
+    if (flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.forum.attribute('EnableToastify') === true) toastify_js__WEBPACK_IMPORTED_MODULE_0___default()({
+      text: flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.translator.trans('flarum-ext-toastme.forum.message1'),
+      duration: -1,
+      offset: {
+        x: 50,
+        // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+        y: 400 // vertical axis - can be a number or a string indicating unity. eg: '2em'
 
-        },
-        destination: "https://flarum.it",
-        newWindow: true,
-        close: true,
-        gravity: "top",
-        // `top` or `bottom`
-        position: "right",
-        // `left`, `center` or `right`
-        backgroundColor: "#e39709",
-        stopOnFocus: true // Prevents dismissing of toast on hover
+      },
+      destination: "https://flarum.it",
+      newWindow: true,
+      close: true,
+      gravity: "top",
+      // `top` or `bottom`
+      position: "right",
+      // `left`, `center` or `right`
+      backgroundColor: "#e39709",
+      stopOnFocus: true // Prevents dismissing of toast on hover
 
-      }).showToast();
-      if (insert) return;
-      vdom.children.splice(1, 0, insert);
-    }
+    }).showToast();
+    return flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a;
   });
 });
 
