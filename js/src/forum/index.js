@@ -2,16 +2,16 @@ import Toastify from 'toastify-js';
 import { extend } from 'flarum/common/extend';
 import app from 'flarum/app';
 import IndexPage from 'flarum/components/IndexPage';
-
+import HeaderPrimary from 'flarum/forum/components/HeaderPrimary';
 
 
 
 app.initializers.add('justoverclock/flarum-ext-toastme', () => {
-  extend(IndexPage.prototype, 'oninit', function () {
+  extend(HeaderPrimary.prototype, 'oninit', function () {
     this.toastAdded = false;
   });
 
-  extend(IndexPage.prototype, 'oncreate', function () {
+  extend(HeaderPrimary.prototype, 'oncreate', function () {
     if (app.forum.attribute('EnableToastify') === true && !this.toastAdded) {
       Toastify({
         text: app.translator.trans('flarum-ext-toastme.forum.message1'),

@@ -564,15 +564,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_app__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/components/IndexPage */ "flarum/components/IndexPage");
 /* harmony import */ var flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/forum/components/HeaderPrimary */ "flarum/forum/components/HeaderPrimary");
+/* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
 
 flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.initializers.add('justoverclock/flarum-ext-toastme', function () {
-  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'oninit', function () {
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'oninit', function () {
     this.toastAdded = false;
   });
-  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'oncreate', function () {
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'oncreate', function () {
     if (flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.forum.attribute('EnableToastify') === true && !this.toastAdded) {
       toastify_js__WEBPACK_IMPORTED_MODULE_0___default()({
         text: flarum_app__WEBPACK_IMPORTED_MODULE_2___default.a.translator.trans('flarum-ext-toastme.forum.message1'),
@@ -631,6 +634,17 @@ module.exports = flarum.core.compat['common/extend'];
 /***/ (function(module, exports) {
 
 module.exports = flarum.core.compat['components/IndexPage'];
+
+/***/ }),
+
+/***/ "flarum/forum/components/HeaderPrimary":
+/*!***********************************************************************!*\
+  !*** external "flarum.core.compat['forum/components/HeaderPrimary']" ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['forum/components/HeaderPrimary'];
 
 /***/ })
 
